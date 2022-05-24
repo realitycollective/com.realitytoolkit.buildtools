@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
 using UnityEditor.Callbacks;
+using UnityEditor.SceneManagement;
 
 namespace RealityToolkit.BuildTools.Editor
 {
@@ -14,6 +15,7 @@ namespace RealityToolkit.BuildTools.Editor
 
         public static void Build()
         {
+            EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene(), "Temp.unity");
             ParseCommandLineArguments(out var args);
 
             HandleVersion(args);

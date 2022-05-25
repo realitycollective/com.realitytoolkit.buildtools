@@ -22,5 +22,8 @@
     "name": "Reality Collective",
     "email": "realitycollectivedev@gmail.com",
     "url": "https://github.com/realitycollective"
+  },
+  "dependencies": {
+    "com.unity.scriptablebuildpipeline": "1.19.1"
   }
 }

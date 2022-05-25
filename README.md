@@ -16,7 +16,6 @@ tbc
 <!-- Fill in list of requirements here -->
 
 - [Unity 2020.3 and above](https://unity.com/)
-- [RealityCollective.Utilities](https://github.com/realitycollective/com.realitycollective.utilities)
 
 ## Getting Started
 <!-- Update getting started docs here here -->

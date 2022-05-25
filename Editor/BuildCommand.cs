@@ -7,7 +7,7 @@ using UnityEditor.Build.Reporting;
 using UnityEditor.Callbacks;
 using UnityEditor.SceneManagement;
 
-namespace RealityToolkit.BuildTools.Editor
+namespace RealityCollective.BuildTools.Editor
 {
     public static class BuildCommand
     {

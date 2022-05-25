@@ -1,6 +1,6 @@
 {
-  "name": "com.realitytoolkit.buildtools",
-  "displayName": "RealityToolkit.BuildTools",
+  "name": "com.realitycollective.buildtools",
+  "displayName": "RealityCollective.BuildTools",
   "description": "A collection of utilities and tools useful for building Unity projects by the Reality Collective",
   "keywords": [
     "Unity",
@@ -16,7 +16,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/realitycollective/com.realitytoolkit.buildtools"
+    "url": "git+https://github.com/realitycollective/com.realitycollective.buildtools"
   },
   "author": {
     "name": "Reality Collective",

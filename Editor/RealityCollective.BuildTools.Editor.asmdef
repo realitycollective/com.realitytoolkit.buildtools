@@ -1,6 +1,6 @@
 {
-    "name": "RealityToolkit.BuildTools.Editor",
-    "rootNamespace": "RealityToolkit.BuildTools.Editor",
+    "name": "RealityCollective.BuildTools.Editor",
+    "rootNamespace": "RealityCollective.BuildTools.Editor",
     "includePlatforms": [
         "Editor"
     ],

@@ -2,46 +2,55 @@
 
 The buildtools platform components for the [Reality Collective](https://realityCollective.io). This package enables CI/CD building of Unity projects through automation.
 
-## What's included?
-<!-- Fill in list of what is included here -->
+[![openupm](https://img.shields.io/npm/v/com.realitycollective.buildtools?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.realitycollective.buildtools/) [![Discord](https://img.shields.io/discord/597064584980987924.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/hF7TtRCFmB)
+[![Publish main branch and increment version](https://github.com/realitycollective/com.realitycollective.buildtools/actions/workflows/main-publish.yml/badge.svg)](https://github.com/realitycollective/com.realitycollective.buildtools/actions/workflows/main-publish.yml)
+[![Publish development branch on Merge](https://github.com/realitycollective/com.realitycollective.buildtools/actions/workflows/development-publish.yml/badge.svg)](https://github.com/realitycollective/com.realitycollective.buildtools/actions/workflows/development-publish.yml)
+[![Build and test UPM packages for platforms, all branches except main](https://github.com/realitycollective/com.realitycollective.buildtools/actions/workflows/development-buildandtestupmrelease.yml/badge.svg)](https://github.com/realitycollective/com.realitycollective.buildtools/actions/workflows/development-buildandtestupmrelease.yml)
 
-tbc
+## Installation
 
-## Supported Devices
-<!-- Fill in list of what devices or services are supported here -->
+Make sure to always use the same source for all toolkit modules. Avoid using different installation sources within the same project. We provide the following ways to install Reality Toolkit modules:
 
-- tbc
+### Method 1: OpenUPM CLI
 
-## Requirements
-<!-- Fill in list of requirements here -->
+This method requires the [OpenUPM CLI](https://openupm.com/#get-started-with-cli-optional) to be installed on your computer.
 
-- [Unity 2020.3 and above](https://unity.com/)
-
-## Getting Started
-<!-- Update getting started docs here here -->
-
-tbc
-
-For more details, check the ["Getting Started" documentation](http://realitycollective.io/) for the Reality Collective (coming soon)
-
-### OpenUPM
-<!-- Check openUPM links and details -->
-
-[![openupm](https://img.shields.io/npm/v/com.realityCollective.buildtools?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.realityCollective.buildtools/)
-
-The simplest way to getting started using the buildtools platform package in your project is via OpenUPM. Visit [OpenUPM](https://openupm.com/docs/) to learn more about it. Once you have the OpenUPM CLI set up use the following command to add the package to your project:
-
-```
-`openupm add com.realityCollective.buildtools`
+```text
+    openupm add com.realitycollective.buildtools
 ```
 
-> For more details on using [OpenUPM CLI, check the docs here](https://github.com/openupm/openupm-cli#installation).
+### Method 2: OpenUPM Scoped Registry
 
-# Build Status
-<!-- Check build status links and details -->
+If you do not wish to use the [OpenUPM CLI](https://openupm.com/#get-started-with-cli-optional) you can also manually add the OpenUPM registry to your project and browse all available toolkit packages.
 
-| branch | build status |
-| --- | --- |
-| main | [![main](https://github.com/realitycollective/com.realityCollective.buildtools/actions/workflows/buildupmpackages.yml/badge.svg?branch=main)](https://github.com/realitycollective/com.realityCollective.buildtools/actions/workflows/buildupmpackages.yml) |
-| development | [![development](https://github.com/realitycollective/com.realityCollective.buildtools/actions/workflows/buildupmpackages.yml/badge.svg?branch=development)](https://github.com/realitycollective/com.realityCollective.buildtools/actions/workflows/buildupmpackages.yml) |
+1. Open the [Project Settings](https://docs.unity3d.com/Manual/comp-ManagerGroup.html) window.
+   
+2. Select the **Package Manager** settings category to the left.
+   
+3. Add a new scoped registry
+   1. Name: **OpenUPM**
+   2. URL: **https://package.openupm.com**
+   3. Scopes: **com.realitycollective** and **com.realitytoolkit**
+   4. Press **Save** 
 
+![Add Scoped Registry](https://github.com/realitycollective/realitycollective.logo/blob/main/RealityToolkit/ReadmeAssets/add-scoped-registry.png?raw=true)
+
+4. Open the [Package Manager](https://docs.unity3d.com/Manual/Packages.html) window.
+   
+5. In the top left packages filter dropdown select **My Registries**.
+   
+6. You'll now see all published toolkit packages listed for you to install.
+
+![Add Scoped Registry](https://github.com/realitycollective/realitycollective.logo/blob/main/RealityToolkit/ReadmeAssets/package-manager-registry.png?raw=true)
+
+### Method 3: Using Package Manager for git users
+
+1. Open the [Package Manager](https://docs.unity3d.com/Manual/Packages.html) through this menu: **Window -> Package Manager**.
+
+2. Inside the [Package Manager](https://docs.unity3d.com/Manual/Packages.html), click on the **+** button on the top left and select **Add package from git URL...**.
+
+3. Input the following URL: https://github.com/realitycollective/com.realitycollective.buildtools.git and click **Add**.
+
+### Method 4: Unity Asset Store
+
+We are working on making the Reality Toolkit available via the Unity asset store and will share news, once available.
